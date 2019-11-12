@@ -6,35 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5f0c6a3b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation">
+        <a class="nav0 target" href="#top">
+            <div class="nav about">About</div>
+        </a>
+        <a class="nav1" href="#project-start">
+            <div class="nav">Projects</div>
+        </a>
+
+        <div class="nav-icons">
+            <a class ="icon nav-icon" href="https://github.com/hmaiermack"><i class="fab fa-github"></i></a>
+            <a class="icon nav-icon" href="mailto:hmaiermack@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a class="icon nav-icon" href="www.linkedin.com/in/mack-maier"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
     <main role="main">
         <section role="region" class="about-section">
-            <h1>About</h1>
+            <h1>Hi, I’m Mack. I’m an aspiring full stack web developer.</h1>
             <div class="bio">
-                <p>bio goes here</p>
+                <p> I’m currently enrolled in Thinkful’s Full Stack Web Development bootcamp. 
+                    I love development because for me it’s the perfect bridge between form and function. 
+                    There’s no better feeling than facing a complex problem and breaking it down to the constituent parts to come up with an elegant solution. 
+                    I’m always trying to learn new things and conquer the gaps in my knowledge.
+                    <br>
+                    <br>
+                        When I’m not studying or working, you’ll usually catch me hanging out with friends or at a show. 
+                    I love cooking, fitness, and music. I’m also an (extremely) amateur brewer of (decidedly average) beer.
+                        </p>
             </div>
         </section>
-        <section role="region" class="project-section">
+        <section role="region" class="project-section" id="project-start">
             <div role="region" class="project-container">
-            <div class="project-picture"> Picture Here</div>
+                <div>
+            <a id="project-picture" href="https://hmaiermack.github.io/thinkful-quiz-app/">
+            <img class="project-picture" alt="GIF showing the app in use." src="project-images/quiz-app-gif.gif"/>
+            </a>
+            <div class ="icons">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                </div>
+                </div>
             <div class="project-info">
-            <h2>Title</h2>
-            <p>info<br>info<br>info</p>
+            <h2><a href="https://hmaiermack.github.io/thinkful-quiz-app/">Quiz App</a></h2>
+            <p>A responsive, multiple choice application designed to test your knowledge on the largest city in the five largest states in the US.</p>
+            <a class="icon" href="https://github.com/hmaiermack/thinkful-quiz-app">
+            <i class="fab fa-github" id="repo"></i>
+            </a>
+            </div>
             </div>
             </div>
         </section>
-        <section role="region" class="project-section">
-                <div role="region" class="project-container">
-                <div class="project-picture"> Picture Here</div>
-                <div class="project-info">
-                <h2>Title</h2>
-                <p>info<br>info<br>info</p>
-                </div>
-                </div>
-            </section>
     </main>
-    <footer role="footer">footer</footer>
+    <footer role="footer">
+            <a class ="icon" href="https://github.com/hmaiermack"><i class="fab fa-github"></i></a>
+            <a class="icon" href="mailto:hmaiermack@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a class="icon" href="www.linkedin.com/in/mack-maier"><i class="fab fa-linkedin"></i></a>
+    </footer>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </html>
