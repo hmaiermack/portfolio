@@ -96,7 +96,7 @@
     .icons > i{
         padding: 0 .5em 0 .5em;
         font-size: 2em;
-        color: #9b705e;
+        color: #c36e49;
     }
 }
 
@@ -181,7 +181,7 @@
     .icons{
         flex-direction: row;
         font-size: 5em;
-        color: #9b705e;
+        color: #c36e49;
     }
     .icons > i{
         padding: 0 .5em 0 .5em;
@@ -198,15 +198,15 @@
 }
 
 body{
-    background-color: #1e1e1e;
+    background-color: #292929;
 }
 
 h1, h2{
-    color: #437198;
+    color: #689dca;
 }
 
 p{
-    color: #9b705e;
+    color: #c36e49;
 }
 
 nav, footer{
@@ -214,12 +214,12 @@ nav, footer{
 }
 
 a{
-    color: #93a689;
+    color: #c26fbb;
     
 }
 
 a:hover{
-    color: #986994;
+    color: #9dd380;
     cursor: pointer;
 }
 
@@ -235,6 +235,3 @@ html {
     scroll-behavior: smooth;
 }
 
-a > p{
-    display: inline-block;
-}
