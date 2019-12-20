@@ -100,7 +100,108 @@
     }
 }
 
-@media (min-width: 767px){
+@media (max-width: 799px){
+    
+    *{
+        text-align: center;
+    }
+
+    nav{
+        position: fixed;
+    }
+
+    .nav-icons{
+        display: none;
+    }
+
+    nav,
+    footer {
+        background-color: gray;
+        width: 100%;
+        color: #ffffff;
+    }
+    p{
+        line-height: 1.5em;
+    }
+    section{
+        min-height: 300px;
+        padding: 10%;
+    }
+
+    nav{
+        flex-direction: row;
+        top: 0;
+        left: 0;
+        right: 0;
+        }
+
+    a .nav, a .nav{
+        padding: 1.5em 1em 1.5em 1em;
+        }
+
+    footer{
+        position: sticky;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: .1em;
+        padding-bottom: .1em;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    footer > i{
+        font-size: .75em;
+    }
+
+    .bio{
+        line-height: 2em;
+        border: 2px solid #37373d;
+        vertical-align: middle;
+        padding: 1%;
+    }
+
+    h1, h2{
+        text-decoration: underline;
+    }
+
+    #project-start{
+        border-top: 1px solid #37373d;
+    }
+
+
+    .project-picture{
+        align-self: flex-start;
+        max-width: 35em;
+    }
+
+    .project-container{
+        margin-bottom: 1em;
+        padding-bottom: .2em;
+        border-bottom: 1px solid #37373d;
+    }
+
+    .icons{
+        flex-direction: row;
+        font-size: 5em;
+        color: #c36e49;
+    }
+    .icons > i{
+        padding: 0 .5em 0 .5em;
+    }
+
+    #repo{
+        font-size: 5em;
+    }
+
+    .project-info{
+        align-self: flex-start;
+        padding: 0 0 0 1em;
+    }
+}
+
+
+@media (min-width: 800px){
     *{
         text-align: center;
     }
