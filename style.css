@@ -104,7 +104,7 @@
     .icons > i{
         padding: 0 .5em 0 .5em;
         font-size: 2em;
-        color: #c36e49;
+        color: #FFA880;
     }
 }
 
@@ -192,7 +192,7 @@
     .icons{
         flex-direction: row;
         font-size: 5em;
-        color: #c36e49;
+        color: #FFA880;
     }
     .icons > i{
         padding: 0 .5em 0 .5em;
@@ -295,7 +295,7 @@
     .icons{
         flex-direction: row;
         font-size: 5em;
-        color: #c36e49;
+        color: #FFA880;
     }
     .icons > i{
         padding: 0 .5em 0 .5em;
@@ -320,7 +320,7 @@ h1, h2{
 }
 
 p{
-    color: #c36e49;
+    color: #FFA880;
 }
 
 nav, footer{
@@ -328,7 +328,7 @@ nav, footer{
 }
 
 a{
-    color: #c26fbb;
+    color: #EBD1EB;
     
 }
 
