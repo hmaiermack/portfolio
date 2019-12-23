@@ -12,6 +12,14 @@
     *{
         text-align: center;
     }
+
+    body{
+        margin: 0;
+    }
+
+    main{
+        margin-top: 1.5em;
+    }
     nav{
         position: fixed;
     }
@@ -42,15 +50,15 @@
         }
 
     a .nav, a .nav{
-        padding: 1.5em 1em 1.5em 1em;
+        padding: .5em 1em .5em 1em;
         }
 
     footer{
         position: sticky;
         flex-direction: row;
         justify-content: space-around;
-        padding-top: .1em;
-        padding-bottom: .1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
         bottom: 0;
         left: 0;
         right: 0;
@@ -100,7 +108,7 @@
     }
 }
 
-@media (max-width: 799px){
+@media (min-width: 767px) and (max-width: 799px){
     
     *{
         text-align: center;
@@ -143,8 +151,8 @@
         position: sticky;
         flex-direction: row;
         justify-content: space-around;
-        padding-top: .1em;
-        padding-bottom: .1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
         bottom: 0;
         left: 0;
         right: 0;
@@ -190,7 +198,7 @@
         padding: 0 .5em 0 .5em;
     }
 
-    #repo{
+    .repo{
         font-size: 5em;
     }
 
@@ -208,6 +216,7 @@
 
     nav,
     footer {
+        font-size: 1em;
         position: fixed;
         background-color: gray;
         width: 100%;
@@ -218,8 +227,12 @@
     .nav-icons{
         position: fixed;
         right: 1em;
-        font-size: 2em;
+        font-size: 1em;
         flex-direction: row;
+    }
+
+    .nav0, .nav1{
+        font-size: 1em;
     }
 
     .nav-icon{
@@ -288,7 +301,7 @@
         padding: 0 .5em 0 .5em;
     }
 
-    #repo{
+    .repo{
         font-size: 5em;
     }
 
