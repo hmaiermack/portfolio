@@ -108,7 +108,7 @@
     }
 }
 
-@media (min-width: 767px) and (max-width: 799px){
+@media (min-width: 767px) and (max-width: 899px){
     
     *{
         text-align: center;
@@ -209,7 +209,7 @@
 }
 
 
-@media (min-width: 800px){
+@media (min-width: 900px){
     *{
         text-align: center;
     }
@@ -242,7 +242,7 @@
 
     section{
         min-height: 300px;
-        padding: 10% 0 10% 0;
+        padding: 2% 0 2% 0;
     }
 
     .about-section{
