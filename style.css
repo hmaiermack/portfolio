@@ -94,11 +94,11 @@ i{
 
 .icons{
     flex-direction: row;
+    font-size: 2em;
 }
 
 .icons > i{
     padding: 0 .5em 0 .5em;
-    font-size: 1em;
     color: #FFA880;
 }
 
