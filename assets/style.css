@@ -69,7 +69,7 @@ footer > i{
 
 h1, h2{
     text-decoration: underline;
-    color: #689dca
+    color: #689dca;
 }
 
 .project-section{
@@ -122,6 +122,7 @@ title{
 html {
     scroll-behavior: smooth;
 }
+  
 
 @media (min-width: 900px){
     *{
