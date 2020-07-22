@@ -90,7 +90,7 @@ h1, h2, h3 {
 }
 
 i{
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .icons{
@@ -161,7 +161,8 @@ html {
     }
 
     .about-section{
-        padding: 5%;
+        
+        padding: 2.5% 5% 5% 5%;
     }
 
     nav{
@@ -213,7 +214,7 @@ html {
 
     .icons{
         flex-direction: row;
-        font-size: 3em;
+        font-size: 1.5em;
         color: #FFA880;
     }
     .icons > i{
