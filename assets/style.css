@@ -65,9 +65,10 @@ footer > i{
 .bio{
     border: 1px solid #37373d;
     vertical-align: middle;
+    padding: .25em;
 }
 
-h1, h2{
+h1, h2, h3 {
     text-decoration: underline;
     color: #689dca;
 }
@@ -186,7 +187,7 @@ html {
         line-height: 2em;
         border: 2px solid #37373d;
         vertical-align: middle;
-        padding: 1%;
+        padding: .25em;
     }
 
     h1, h2{
