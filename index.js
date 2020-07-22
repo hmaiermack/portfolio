@@ -1,4 +1,3 @@
-let loading = true
 let filtered;
 
 async function fetchData(){
@@ -7,12 +6,12 @@ async function fetchData(){
     let data = await response.json();
     filtered = data.filter(item => item.type === "PushEvent").slice(0, 5)
 
-    loading = false;
 }
 
 function populateDiv() {
-    loading ? $("#github-activity").append("loading...")
-    : filtered.forEach(item => {
+    $("#github-div").empty()
+    $("#github-div").append(`<h2 style="align-self: center;">Recent Github Activity</h2>`)
+    filtered.forEach(item => {
         $("#github-div").append(`
         <div style="display:flex; align-items:flex-start">
             <h3 style="margin: 0;">${item.created_at.substr(0, 10)}</h3>
