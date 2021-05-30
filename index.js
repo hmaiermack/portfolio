@@ -5,7 +5,6 @@ async function fetchData(){
 
     let data = await response.json();
     filtered = data.filter(item => item.type === "PushEvent").slice(0, 5)
-    console.log(filtered[0])
 }
 
 function populateDiv() {

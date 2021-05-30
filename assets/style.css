@@ -1,232 +1,239 @@
-*{
-    font-family: sans-serif;
-    box-sizing: border-box;
-    font-family: 'Source Code Pro', monospace;
-    border-color: #37373d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  border-color: #37373d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-body{
-    background-color: #292929;
+body {
+  background-color: #292929;
 }
 
-nav{
-    position: fixed;
+nav {
+  position: fixed;
 }
 
-.nav-icons{
-    display: none;
+.nav-icons {
+  display: none;
 }
 
 nav,
 footer {
-    width: 100%;
-    color: #ffffff;
-    background-color: #3c3c3c;
+  width: 100%;
+  color: #ffffff;
+  background-color: #3c3c3c;
 }
-p{
-    line-height: 1.5em;
-    color: #FFA880;
+p {
+  line-height: 1.5em;
+  color: #ffa880;
 }
-section{
-    min-height: 300px;
-    padding: 10%;
+section {
+  min-height: 300px;
+  padding: 10%;
 }
 
-nav{
+nav {
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+a .nav,
+a .nav {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+footer {
+  position: sticky;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer > i {
+  font-size: 0.75em;
+}
+
+.bio {
+  border: 1px solid #37373d;
+  vertical-align: middle;
+  padding: 0.25em;
+}
+
+h1,
+h2,
+h3 {
+  text-decoration: underline;
+  color: #689dca;
+}
+
+.project-section {
+  border-top: 1px solid #37373d;
+}
+
+.project-picture {
+  border: 1px solid #37373d;
+  max-width: 90%;
+  max-height: 50%;
+}
+
+.project-container {
+  margin-bottom: 1em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #37373d;
+}
+
+i {
+  font-size: 1.5em;
+}
+
+.icons {
+  flex-direction: row;
+}
+
+.icons > i {
+  padding: 0 0.5em 0 0.5em;
+  color: #ffa880;
+}
+
+a {
+  color: #ebd1eb;
+}
+
+.prose {
+  max-width: 65ch;
+  text-align: left;
+}
+
+a:hover {
+  color: #9dd380;
+  cursor: pointer;
+}
+
+.icon {
+  text-decoration: none;
+}
+
+title {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 900px) {
+  * {
+    text-align: center;
+  }
+
+  nav,
+  footer {
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    padding: 10px 0px;
+  }
+
+  .nav-icons {
+    position: fixed;
+    right: 1em;
+    font-size: 1em;
+    flex-direction: row;
+  }
+
+  .nav0,
+  .nav1 {
+    font-size: 1em;
+  }
+
+  .nav-icon {
+    flex-direction: row;
+    padding-left: 1em;
+  }
+
+  section {
+    min-height: 300px;
+    padding: 2% 0 2% 0;
+  }
+
+  .about-section {
+    padding: 2.5% 5% 5% 5%;
+  }
+
+  nav {
     flex-direction: row;
     top: 0;
     left: 0;
     right: 0;
-    }
+  }
 
-a .nav, a .nav{
-    padding: .5em 1em .5em 1em;
-    }
+  a .nav,
+  a .nav {
+    padding: 0 1em 0 1em;
+  }
 
-footer{
-    position: sticky;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+  .project-section {
+    padding: 2% 2% 5% 2%;
+  }
 
-footer > i{
-    font-size: .75em;
-}
+  .section-icons {
+    font-size: 5em;
+  }
 
-.bio{
-    border: 1px solid #37373d;
+  .bio {
+    line-height: 2em;
+    border: 2px solid #37373d;
     vertical-align: middle;
-    padding: .25em;
-}
+    padding: 0.25em;
+  }
 
-h1, h2, h3 {
+  h1,
+  h2 {
     text-decoration: underline;
-    color: #689dca;
-}
+  }
 
-.project-section{
+  #project-start {
     border-top: 1px solid #37373d;
-}
+  }
 
-.project-picture{
-    border: 1px solid #37373d;
-    max-width: 90%;
-    max-height: 50%;
-}
+  .project-picture {
+    align-self: flex-start;
+    max-width: 35em;
+  }
 
-.project-container{
+  .project-container {
+    flex-flow: row;
     margin-bottom: 1em;
-    padding-bottom: .2em;
+    padding-bottom: 0.2em;
     border-bottom: 1px solid #37373d;
-}
+  }
 
-i{
-    font-size: 1.5em;
-}
-
-.icons{
+  .icons {
     flex-direction: row;
-}
+    font-size: 1.5em;
+    color: #ffa880;
+  }
+  .icons > i {
+    padding: 0 0.5em 0 0.5em;
+  }
 
-.icons > i{
-    padding: 0 .5em 0 .5em;
-    color: #FFA880;
-}
+  .repo {
+    font-size: 5em;
+  }
 
-a{
-    color: #EBD1EB;
-    
-}
-
-a:hover{
-    color: #9dd380;
-    cursor: pointer;
-}
-
-.icon{
-    text-decoration: none;
-}
-
-title{
-    display: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-  
-
-@media (min-width: 900px){
-    *{
-        text-align: center;
-    }
-
-    nav,
-    footer {
-        font-size: 1em;
-        position: fixed;
-        width: 100%;
-        color: #ffffff;
-        padding: 10px 0px;
-    }
-
-    .nav-icons{
-        position: fixed;
-        right: 1em;
-        font-size: 1em;
-        flex-direction: row;
-    }
-
-    .nav0, .nav1{
-        font-size: 1em;
-    }
-
-    .nav-icon{
-        flex-direction: row;
-        padding-left: 1em;
-    }
-
-    section{
-        min-height: 300px;
-        padding: 2% 0 2% 0;
-    }
-
-    .about-section{
-        
-        padding: 2.5% 5% 5% 5%;
-    }
-
-    nav{
-        flex-direction: row;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
-    a .nav, a .nav{
-        padding: 0 1em 0 1em;
-    }
-
-    .project-section{
-        padding: 2% 2% 5% 2%;
-    }
-
-    .section-icons{
-        font-size: 5em;
-    }
-
-    .bio{
-        line-height: 2em;
-        border: 2px solid #37373d;
-        vertical-align: middle;
-        padding: .25em;
-    }
-
-    h1, h2{
-        text-decoration: underline;
-    }
-
-    #project-start{
-        border-top: 1px solid #37373d;
-    }
-
-
-    .project-picture{
-        align-self: flex-start;
-        max-width: 35em;
-    }
-
-    .project-container{
-        flex-flow: row;
-        margin-bottom: 1em;
-        padding-bottom: .2em;
-        border-bottom: 1px solid #37373d;
-    }
-
-    .icons{
-        flex-direction: row;
-        font-size: 1.5em;
-        color: #FFA880;
-    }
-    .icons > i{
-        padding: 0 .5em 0 .5em;
-    }
-
-    .repo{
-        font-size: 5em;
-    }
-
-    .project-info{
-        align-self: flex-start;
-        padding: 0 0 0 1em;
-    }
+  .project-info {
+    align-self: flex-start;
+    padding: 0 0 0 1em;
+  }
 }

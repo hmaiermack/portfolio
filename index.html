@@ -32,9 +32,9 @@
     </nav>
     <main>
         <section class="about-section" id="top" style="padding-bottom: 2%;">
-            <h1 style="margin-top: 0;">Hi, I’m Mack. I’m a full stack web developer.</h1>
+            <h1 style="margin-top: 5rem;">Hi, I’m Mack. I’m a full stack web developer.</h1>
             <div class="bio">
-                <p> 
+                <p class="prose"> 
                     I love development because for me it’s the perfect bridge between form and function. 
                     There’s no better feeling than facing a complex problem and breaking it down to the constituent parts to come up with an elegant solution. 
                     I’m always trying to learn new things and conquer the gaps in my knowledge, and would love to work in a team with the same mindset.
@@ -51,7 +51,34 @@
             </div>
         </section>
         <section class="project-section" id="project-start">
-            <!--quiz app container-->
+
+            <div role="region" class="project-container">
+                <div>
+                    <a  href="https://hmaiermack.github.io/vac-static" target="_blank">
+                    <img class="project-picture" alt="Picture showing the app in use." src="assets/project-images/vac-static.jpg"/>
+                    </a>
+                    <div class ="icons section-icons" aria-label="Technologies used for this project include ReactJS, NextJS, Tailwind CSS and strapi.io.">
+                            <i class="fab fa-react" aria-label="ReactJS icon"></i>
+                            <i class="fab fa-css3-alt" aria-label="CSS3 icon"></i>
+                            <i class="fab fa-node-js" aria-label="javaScript icon"></i>
+                        </div>
+                        </div>
+                    <div class="project-info">
+                    <h2>Vashon Athletic Club</h2>
+                    <h3><a href="https://vashonathleticclub.com/" target="_blank">Live Site</a></h3>
+                    <p class="prose">
+                        A website built to specifications for a client. Utilizing React and NextJS on the front end and allowing for client updates
+                        to content via the strapi.io headless CMS. Styled with Tailwind CSS with a mobile first focus, and all design plus typography
+                        done by hand. Stylized Google Calendar functionality using Full Calendar and Google API's, as well as form email functionality
+                        using the EmailJS SDK with Formik. Led client meetings to discover the business needs and features desired, and then explained 
+                        technical implementation overview and advice on whether or not something was a good idea to include in the website. The front end of the 
+                        website is hosted on vercel, and the strapi headless CMS is hosted on render. Whenever content is added or updated on the CMS a rebuild 
+                        is automatically triggered creating a new statically generated NextJS website using a webhook. I also handled everything domain related,
+                        ensuring that both the website and company emails worked properly.
+                    </p>
+                    </div>
+                </div>
+            <!--lift simple container-->
             <div role="region" class="project-container">
                 <div>
             <a  href="https://hmaiermack.github.io/lift-simple" target="_blank">
@@ -66,7 +93,7 @@
             <div class="project-info">
             <h2>Lift Simple</h2>
             <h3><a href="https://lift-simple.com/" target="_blank">Live App</a></h3>
-            <p>
+            <p class="prose">
                 Lift Simple is a full stack web application designed to allow you to create, track, and look at your workouts. 
                 Built in ReactJS, Node.js, using express.js with PostgreSQL.
                 The front end is hosted using Vercel and authentication is handled by auth0. 
@@ -93,7 +120,7 @@
                 <div class="project-info">
                     <h2>Cascade Cast</h2>
                     <h3><a href="https://hmaiermack.github.io/cascade-cast/" target="_blank">Live App</a></h3>
-                    <p>Cascade Cast is a webapp designed to show you snow and weather forecast data for the Washington region. 
+                    <p class="prose">Cascade Cast is a webapp designed to show you snow and weather forecast data for the Washington region. 
                         Using SNOTEL sites and their location data we are able to provide you with the most up to date forecast for the area. 
                         Built with HTML, CSS, JavaScript and jQuery. Also uses APIs from powderlin.es, mapbox.com, and weatherunlocked.com.
                     </p>
