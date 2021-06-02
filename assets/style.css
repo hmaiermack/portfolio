@@ -1,3 +1,9 @@
+:root {
+  --bg-color: #292929;
+  --typewriterSpeed: 4s;
+  --typewriterCharacters: 45;
+}
+
 * {
   font-family: sans-serif;
   box-sizing: border-box;
@@ -7,6 +13,47 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.lead {
+  position: relative;
+  width: max-content;
+}
+
+.lead::before,
+.lead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.lead::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.lead::after {
+  width: 0.125em;
+  background: #689dca;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
 
 body {
