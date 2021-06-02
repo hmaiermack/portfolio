@@ -114,6 +114,11 @@ footer > i {
   border: 1px solid #37373d;
   vertical-align: middle;
   padding: 0.25em;
+  font-size: larger;
+}
+
+h2 {
+  margin-bottom: 0;
 }
 
 h1,
@@ -281,6 +286,10 @@ html {
 
   .project-info {
     align-self: flex-start;
-    padding: 0 0 0 1em;
+    padding: 0 5rem 0 5rem;
+  }
+
+  .project-info .prose {
+    line-height: 2rem;
   }
 }
