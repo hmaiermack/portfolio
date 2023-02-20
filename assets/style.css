@@ -17,7 +17,6 @@
 
 .lead {
   position: relative;
-  width: max-content;
 }
 
 .lead::before,
