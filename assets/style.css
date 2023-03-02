@@ -1,6 +1,6 @@
 :root {
   --bg-color: #292929;
-  --typewriterSpeed: 4s;
+  --typewriterSpeed: 2s;
   --typewriterCharacters: 45;
 }
 
@@ -32,14 +32,14 @@
 .lead::before {
   background: var(--bg-color);
   animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
+    steps(var(--typewriterCharacters)) .25s forwards;
 }
 
 .lead::after {
   width: 0.125em;
   background: #689dca;
   animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
+      steps(var(--typewriterCharacters)) .25s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
@@ -114,6 +114,8 @@ footer > i {
   vertical-align: middle;
   padding: 0.25em;
   font-size: larger;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -182,11 +184,22 @@ html {
   scroll-behavior: smooth;
 }
 
+.gh {
+  line-height: 1.5em;
+  font-size: small;
+  height: 100%;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
 @media (min-width: 900px) {
   * {
     text-align: center;
   }
 
+  .bio > .prose {
+    width: 70%
+  }
   nav,
   footer {
     font-size: 1em;
@@ -247,6 +260,8 @@ html {
     border: 2px solid #37373d;
     vertical-align: middle;
     padding: 1em;
+    display: flex;
+    flex-direction: row;
   }
 
   h1,
